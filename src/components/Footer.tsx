@@ -1,5 +1,6 @@
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const appVersion = import.meta.env.VITE_APP_VERSION || '0.1.0'
 
   return (
     <footer id="contact" className="bg-gray-900 text-gray-300">
@@ -48,7 +49,7 @@ function Footer() {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Chore Aid. Kaikki oikeudet pidätetään.
+              © {currentYear} Chore Aid v{appVersion}. Kaikki oikeudet pidätetään.
             </p>
             <div className="mt-4 sm:mt-0 flex space-x-6">
               <a

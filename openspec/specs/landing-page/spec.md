@@ -22,6 +22,7 @@ The landing page SHALL display a modern, professional interface that introduces 
 - **WHEN** a user reaches the bottom of the landing page
 - **THEN** they see a footer with basic information
 - **AND** the footer includes appropriate content (copyright, links, or contact info placeholder)
+- **AND** the copyright text displays the application version number from package.json in the format "© {year} Chore Aid v{version}. Kaikki oikeudet pidätetään."
 
 ### Requirement: Responsive Design
 The landing page SHALL be fully responsive and usable on mobile, tablet, and desktop devices.
