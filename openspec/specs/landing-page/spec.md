@@ -4,47 +4,25 @@
 TBD - created by archiving change setup-initial-landing-page. Update Purpose after archive.
 ## Requirements
 ### Requirement: Landing Page Structure
-The landing page SHALL display consistent ChoreAid branding including browser-level icons (favicon) across all platforms and devices.
+The landing page SHALL provide clear navigation to the About page for users wanting to learn more about ChoreAid.
 
-#### Scenario: Favicon display in browser tabs
-- **WHEN** a user opens the Chore Aid website in a browser tab
-- **THEN** they see the ChoreAid logo as the favicon in the browser tab
-- **AND** the favicon is clearly visible and recognizable even at small sizes (16x16, 32x32)
-- **AND** the favicon uses the ChoreAid brand colors (blue shield with white elements)
-- **AND** no broken image icon appears in the tab
+#### Scenario: Hero section with About CTA
+- **WHEN** a user views the landing page hero section
+- **THEN** they see a secondary call-to-action button labeled "Tutustu meihin"
+- **AND** clicking the button navigates to the About page (`/meista`)
+- **AND** the button has appropriate styling (secondary/outline style to complement primary CTA)
+- **AND** the button has an aria-label for accessibility ("Lue lisää Chore Aidista")
+- **AND** on mobile devices, CTA buttons stack vertically if space is limited
+- **AND** hover effects indicate the button is interactive
 
-#### Scenario: Favicon in bookmarks and browser history
-- **WHEN** a user bookmarks the Chore Aid website
-- **THEN** the bookmark displays the ChoreAid logo as its icon
-- **AND** the logo appears in browser history listings
-- **AND** the icon helps users quickly identify the site among other bookmarks
-
-#### Scenario: Mobile Add to Home Screen
-- **WHEN** a mobile user adds the site to their home screen (iOS Safari or Android Chrome)
-- **THEN** the home screen icon displays a high-resolution ChoreAid logo (180x180 or higher)
-- **AND** the icon has appropriate padding and clear visual design
-- **AND** the icon background color matches the ChoreAid primary brand color (#2563eb)
-- **AND** iOS users see the logo without any default Safari UI elements overlaid
-
-#### Scenario: Multiple favicon format support
-- **WHEN** any browser requests the favicon
-- **THEN** the HTML provides multiple format options (SVG, PNG, ICO)
-- **AND** modern browsers prefer the SVG format for crisp scaling
-- **AND** older browsers fall back to ICO or PNG formats
-- **AND** all formats use the same ChoreAid logo design for consistency
-
-#### Scenario: Web App Manifest for PWA readiness
-- **WHEN** a browser checks for PWA capabilities
-- **THEN** a valid manifest.json file exists at the root
-- **AND** the manifest includes icon definitions (192x192, 512x512)
-- **AND** the manifest specifies theme_color matching ChoreAid primary blue (#2563eb)
-- **AND** the manifest includes a descriptive app name and short_name
-
-#### Scenario: Browser theme color on mobile
-- **WHEN** a user visits the site on a mobile browser
-- **THEN** the browser's address bar/toolbar adopts the ChoreAid theme color (#2563eb)
-- **AND** the color creates a cohesive branded experience
-- **AND** the theme color is specified via meta tag in index.html
+#### Scenario: Footer section with About link
+- **WHEN** a user scrolls to the footer
+- **THEN** they see a "Pikalinkit" (Quick Links) section
+- **AND** one of the links is labeled "Tietoa meistä"
+- **AND** clicking "Tietoa meistä" navigates to the About page (`/meista`)
+- **AND** the link is positioned logically among other footer links (after "Etusivu", before or after work category links)
+- **AND** the link styling matches other footer navigation links
+- **AND** the link is accessible via keyboard navigation
 
 ### Requirement: Responsive Design
 The landing page SHALL be fully responsive and usable on mobile, tablet, and desktop devices.
