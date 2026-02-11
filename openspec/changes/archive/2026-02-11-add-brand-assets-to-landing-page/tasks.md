@@ -4,8 +4,8 @@
 - [x] 1.1 Create directory structure `src/assets/logo/` and `src/assets/images/`
 - [x] 1.2 Copy ChoreAid logo to `src/assets/logo/choreaid-logo.svg` (or .png based on provided file)
 - [x] 1.3 Move existing working images to organized structure:
-  - [x] Move `src/working-1.png` to `src/assets/images/indoor-work.png` (3 sisätyökuvaa)
-  - [x] Move `src/working-2.png` to `src/assets/images/outdoor-work.png` (3 ulkotyökuvaa)
+  - [x] Move `src/working-1.png` to `src/assets/images/indoor-work-01.png` (3 sisätyökuvaa)
+  - [x] Move `src/working-2.png` to `src/assets/images/outdoor-work-01.png` (3 ulkotyökuvaa)
 - [x] 1.4 Remove old unused image from `src/` root (logo-blue-text.png only; keep working-*.png until moved)
 
 ## 2. Hero Component Updates

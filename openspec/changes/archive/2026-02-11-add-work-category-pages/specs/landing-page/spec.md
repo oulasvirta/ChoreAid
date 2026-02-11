@@ -1,8 +1,7 @@
-# landing-page Specification
+# landing-page Specification Delta
 
-## Purpose
-TBD - created by archiving change setup-initial-landing-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
+
 ### Requirement: Landing Page Structure
 The landing page SHALL display a modern, professional interface that introduces Chore Aid and its purpose.
 
@@ -42,41 +41,6 @@ The landing page SHALL display a modern, professional interface that introduces 
 - **AND** the copyright text displays the application version number from package.json in the format "© {year} Chore Aid v{version}. Kaikki oikeudet pidätetään."
 - **AND** the footer contains working navigation links to category pages and other sections
 
-### Requirement: Responsive Design
-The landing page SHALL be fully responsive and usable on mobile, tablet, and desktop devices.
-
-#### Scenario: Mobile viewport
-- **WHEN** the page is viewed on a mobile device (< 768px width)
-- **THEN** all content is readable and accessible
-- **AND** navigation and interaction elements are appropriately sized for touch
-- **AND** the layout adapts to the smaller screen (stacked layout, adjusted spacing)
-
-#### Scenario: Desktop viewport
-- **WHEN** the page is viewed on a desktop device (≥ 1024px width)
-- **THEN** content utilizes available space effectively
-- **AND** the layout is optimized for larger screens (multi-column, wider spacing)
-
-### Requirement: Accessibility
-The landing page SHALL meet basic accessibility requirements for keyboard navigation and screen readers.
-
-#### Scenario: Image accessibility
-- **WHEN** a screen reader user accesses the page
-- **THEN** all images (logo and feature images) have descriptive alt text
-- **AND** the alt text clearly describes the image content
-- **AND** decorative images are marked appropriately (empty alt="" or aria-hidden)
-
-#### Scenario: Screen reader compatibility
-- **WHEN** a screen reader user accesses the page
-- **THEN** semantic HTML elements are used (header, main, footer, sections)
-- **AND** images have appropriate alt text
-- **AND** headings follow a logical hierarchy (h1, h2, h3)
-
-#### Scenario: Keyboard navigation
-- **WHEN** a user navigates the page using only the keyboard
-- **THEN** all interactive elements are focusable
-- **AND** focus indicators are visible
-- **AND** the tab order is logical
-
 ### Requirement: Modern Visual Design
 The landing page SHALL use modern design principles and Tailwind CSS for styling.
 
@@ -85,19 +49,3 @@ The landing page SHALL use modern design principles and Tailwind CSS for styling
 - **THEN** visual feedback indicates the element is clickable (cursor change, scale, shadow, etc.)
 - **AND** the transition is smooth and professional
 - **AND** keyboard focus shows clear visual indicators
-
-### Requirement: Asset Management
-Visual assets (logo and images) SHALL be organized in a structured directory within the project.
-
-#### Scenario: Asset organization
-- **WHEN** developers need to locate visual assets
-- **THEN** logo files are stored in `src/assets/logo/`
-- **AND** work example images are stored in `src/assets/images/`
-- **AND** image files have descriptive names (e.g., `indoor-work-01.png`, `outdoor-work-01.png`)
-
-#### Scenario: Image optimization
-- **WHEN** images are added to the project
-- **THEN** they are optimized for web usage (reasonable file sizes)
-- **AND** they use appropriate formats (PNG/JPEG for photos, SVG for logos when available)
-- **AND** they implement lazy loading where appropriate to improve performance
-

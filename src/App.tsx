@@ -1,17 +1,18 @@
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import IndoorWork from './pages/IndoorWork';
+import OutdoorWork from './pages/OutdoorWork';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-1">
-        <Hero />
-        <Features />
-      </main>
-      <Footer />
-    </div>
-  )
+    <BrowserRouter basename="/ChoreAid">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sisatyot" element={<IndoorWork />} />
+        <Route path="/ulkotyot" element={<OutdoorWork />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

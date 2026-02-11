@@ -1,5 +1,6 @@
-import indoorWorkImg from '../assets/images/indoor-work.png';
-import outdoorWorkImg from '../assets/images/outdoor-work.png';
+import { Link } from 'react-router-dom';
+import indoorWorkImg from '../assets/images/indoor-work-01.png';
+import outdoorWorkImg from '../assets/images/outdoor-work-01.png';
 
 function Features() {
   const features = [
@@ -147,10 +148,14 @@ function Features() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             {/* Indoor Work */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <Link 
+              to="/sisatyot" 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block"
+              aria-label="Siirry sisätyöt-sivulle"
+            >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={outdoorWorkImg}
+                  src={indoorWorkImg}
                   alt="Opiskelijat tekemässä sisätöitä: siivousta, imurointia ja kotitöitä"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -164,13 +169,17 @@ function Features() {
                   Siivousta, imurointia ja kotitöitä
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* Outdoor Work */}
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <Link 
+              to="/ulkotyot" 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer block"
+              aria-label="Siirry ulkotyöt-sivulle"
+            >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={indoorWorkImg}
+                  src={outdoorWorkImg}
                   alt="Opiskelijat tekemässä ulkotöitä: puutarhatöitä, rengasvaihtoa ja lumenluontia"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -184,7 +193,7 @@ function Features() {
                   Puutarhatöitä, rengasvaihtoa ja lumenluontia
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

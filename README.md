@@ -2,7 +2,11 @@
 
 Chore Aid on webbisivusto, joka yhdistää vapaana olevia opiskelijoita auttamaan kotitöissä tarvitsevia ihmisiä (esim. eläkeläisiä).
 
-## Tech Stack
+Pidetään AI-kehitykselle ehdotuksista kirjaa tiedostossa [Ehdotukset.md](Ehdotukset.md) ja toteutetaan ehdotukset järjestyksessä käyttäen GitHubin co-pilotia ja OpenSpec "specs driven development"-menetelmää. 
+
+Ehdotusten tulee olla konkreettisia, toteuttamiskelpoisia ja linjassa projektin tavoitteiden kanssa.
+
+## Käytössä olevat teknologiat
 
 - **React 18+** - Moderni UI-kirjasto
 - **TypeScript** - Tyyppiturvallisuus
@@ -139,4 +143,4 @@ ChoreAid/
 
 ## Lisenssi
 
-Kaikki oikeudet pidätetään.
+Kaikki oikeudet pidätetään 🤣

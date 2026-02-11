@@ -80,7 +80,7 @@ Visual assets (logo and images) SHALL be organized in a structured directory wit
 - **WHEN** developers need to locate visual assets
 - **THEN** logo files are stored in `src/assets/logo/`
 - **AND** work example images are stored in `src/assets/images/`
-- **AND** image files have descriptive names (e.g., `indoor-work.png`, `outdoor-work.png`)
+- **AND** image files have descriptive names (e.g., `indoor-work-01.png`, `outdoor-work-01.png`)
 
 #### Scenario: Image optimization
 - **WHEN** images are added to the project

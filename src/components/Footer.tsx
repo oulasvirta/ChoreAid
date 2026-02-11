@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
   const currentYear = new Date().getFullYear()
   const appVersion = import.meta.env.VITE_APP_VERSION || '0.1.0'
@@ -19,20 +21,28 @@ function Footer() {
             <h3 className="text-white text-lg font-semibold mb-4">Pikalinkit</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#features"
+                <Link
+                  to="/"
                   className="hover:text-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded"
                 >
-                  Miten se toimii?
-                </a>
+                  Etusivu
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/sisatyot"
                   className="hover:text-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded"
                 >
-                  Ota yhteyttä
-                </a>
+                  Sisätyöt
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/ulkotyot"
+                  className="hover:text-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded"
+                >
+                  Ulkotyöt
+                </Link>
               </li>
             </ul>
           </div>
