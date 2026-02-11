@@ -1,3 +1,5 @@
+import logo from '../assets/logo/choreaid-logo.svg';
+
 function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
@@ -10,6 +12,15 @@ function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
         <div className="text-center">
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src={logo} 
+              alt="ChoreAid logo" 
+              className="h-16 sm:h-20 lg:h-24 w-auto drop-shadow-2xl"
+            />
+          </div>
+          
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
             <span className="block">Chore Aid</span>
           </h1>

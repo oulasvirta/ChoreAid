@@ -1,3 +1,6 @@
+import indoorWorkImg from '../assets/images/indoor-work.png';
+import outdoorWorkImg from '../assets/images/outdoor-work.png';
+
 function Features() {
   const features = [
     {
@@ -128,6 +131,60 @@ function Features() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Esimerkkejä Töistä */}
+        <div className="mt-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Esimerkkejä Töistä
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Autamme monenlaisissa kotitöissä – sisällä ja ulkona
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+            {/* Indoor Work */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={outdoorWorkImg}
+                  alt="Opiskelijat tekemässä sisätöitä: siivousta, imurointia ja kotitöitä"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+              <div className="bg-white p-6 border-t-4 border-primary-500">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                  Sisätyöt
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Siivousta, imurointia ja kotitöitä
+                </p>
+              </div>
+            </div>
+
+            {/* Outdoor Work */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={indoorWorkImg}
+                  alt="Opiskelijat tekemässä ulkotöitä: puutarhatöitä, rengasvaihtoa ja lumenluontia"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+              <div className="bg-white p-6 border-t-4 border-primary-500">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                  Ulkotyöt
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Puutarhatöitä, rengasvaihtoa ja lumenluontia
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

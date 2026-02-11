@@ -1,8 +1,7 @@
-# landing-page Specification
+# landing-page Specification Delta
 
-## Purpose
-TBD - created by archiving change setup-initial-landing-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
+
 ### Requirement: Landing Page Structure
 The landing page SHALL display a modern, professional interface that introduces Chore Aid and its purpose.
 
@@ -39,19 +38,17 @@ The landing page SHALL display a modern, professional interface that introduces 
 - **AND** the footer includes appropriate content (copyright, links, or contact info placeholder)
 - **AND** the copyright text displays the application version number from package.json in the format "© {year} Chore Aid v{version}. Kaikki oikeudet pidätetään."
 
-### Requirement: Responsive Design
-The landing page SHALL be fully responsive and usable on mobile, tablet, and desktop devices.
+### Requirement: Modern Visual Design
+The landing page SHALL use modern design principles and Tailwind CSS for styling.
 
-#### Scenario: Mobile viewport
-- **WHEN** the page is viewed on a mobile device (< 768px width)
-- **THEN** all content is readable and accessible
-- **AND** navigation and interaction elements are appropriately sized for touch
-- **AND** the layout adapts to the smaller screen (stacked layout, adjusted spacing)
-
-#### Scenario: Desktop viewport
-- **WHEN** the page is viewed on a desktop device (≥ 1024px width)
-- **THEN** content utilizes available space effectively
-- **AND** the layout is optimized for larger screens (multi-column, wider spacing)
+#### Scenario: Visual appearance with brand assets
+- **WHEN** a user views the landing page
+- **THEN** it uses a modern color scheme and typography
+- **AND** it displays the official ChoreAid logo in the hero section
+- **AND** it shows authentic, professional images of chores being performed
+- **AND** spacing and layout follow contemporary design patterns
+- **AND** the design is clean and professional
+- **AND** Tailwind CSS utility classes are used for styling
 
 ### Requirement: Accessibility
 The landing page SHALL meet basic accessibility requirements for keyboard navigation and screen readers.
@@ -74,17 +71,7 @@ The landing page SHALL meet basic accessibility requirements for keyboard naviga
 - **AND** focus indicators are visible
 - **AND** the tab order is logical
 
-### Requirement: Modern Visual Design
-The landing page SHALL use modern design principles and Tailwind CSS for styling.
-
-#### Scenario: Visual appearance with brand assets
-- **WHEN** a user views the landing page
-- **THEN** it uses a modern color scheme and typography
-- **AND** it displays the official ChoreAid logo in the hero section
-- **AND** it shows authentic, professional images of chores being performed
-- **AND** spacing and layout follow contemporary design patterns
-- **AND** the design is clean and professional
-- **AND** Tailwind CSS utility classes are used for styling
+## ADDED Requirements
 
 ### Requirement: Asset Management
 Visual assets (logo and images) SHALL be organized in a structured directory within the project.
@@ -100,4 +87,3 @@ Visual assets (logo and images) SHALL be organized in a structured directory wit
 - **THEN** they are optimized for web usage (reasonable file sizes)
 - **AND** they use appropriate formats (PNG/JPEG for photos, SVG for logos when available)
 - **AND** they implement lazy loading where appropriate to improve performance
-
