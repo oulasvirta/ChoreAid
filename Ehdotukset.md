@@ -7,15 +7,15 @@ Halutaan nettisivuista mahdollisimman yksinkertaiset, helppokäyttöiset,
 - [ ] pitää pystyä suodattaa työtehtävät 
 - [ ] halutaan logo näkyville nettisivuille
 - [ ] nettisivu löytyy linkillä
-- [ ] slogan näkyviin
-- [ ] somet ja linkit niihin	
+- [x] slogan näkyviin
+- [x] somet ja linkit niihin	
  
  
  
  
  
 - [ ] Etusivu: Voi selata työtehtäviä, alhaalla esittelysivu, kuvat töistä, voi suodattaa haluaako nähdä vain ulkotöitä, sisätöitä tai molempia, haku
-- [ ] Esittely sivu:  (meistä)(tietoa+kuva), mitä halutaan saavuttaa, sähköposti, somet,slogan,kertokaa miksi teimme nettisivut
+- [x] Esittely sivu:  (meistä)(tietoa+kuva), mitä halutaan saavuttaa, sähköposti, somet,slogan,kertokaa miksi teimme nettisivut
  
 - [ ] Työtehtävän tiedot: Sijainti, linkki profiiliin, hinta, lyhyt kuvaus työstä (vinted tyylisesti)
  

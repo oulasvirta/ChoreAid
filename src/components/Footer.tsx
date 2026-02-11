@@ -44,6 +44,14 @@ function Footer() {
                   Ulkotyöt
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/meista"
+                  className="hover:text-primary-400 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded"
+                >
+                  Tietoa meistä
+                </Link>
+              </li>
             </ul>
           </div>
 

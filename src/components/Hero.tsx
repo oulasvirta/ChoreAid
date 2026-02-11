@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo/choreaid-logo.svg';
 
 function Hero() {
@@ -37,12 +38,12 @@ function Hero() {
             >
               Lue lisää
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/meista"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-primary-900/50 backdrop-blur-sm rounded-lg border-2 border-white/30 hover:bg-primary-900/70 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700"
             >
-              Ota yhteyttä
-            </a>
+              Tutustu meihin
+            </Link>
           </div>
         </div>
       </div>
