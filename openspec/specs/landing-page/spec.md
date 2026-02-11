@@ -4,43 +4,47 @@
 TBD - created by archiving change setup-initial-landing-page. Update Purpose after archive.
 ## Requirements
 ### Requirement: Landing Page Structure
-The landing page SHALL display a modern, professional interface that introduces Chore Aid and its purpose.
+The landing page SHALL display consistent ChoreAid branding including browser-level icons (favicon) across all platforms and devices.
 
-#### Scenario: Features section with navigable work category images
-- **WHEN** a user scrolls down the landing page
-- **THEN** they see a section explaining how the service works or its benefits
-- **AND** they see an "Esimerkkejä Töistä" (Examples of Work) subsection displaying authentic work images
-- **AND** the images show both indoor work (cleaning, vacuuming, housework) and outdoor work (gardening, tire change, snow shoveling)
-- **AND** each image group is a clickable link that navigates to the respective category page
-- **AND** the links have clear hover effects indicating they are interactive
-- **AND** each image group has a descriptive caption in Finnish explaining the work types
-- **AND** images are displayed in a responsive layout (stacked on mobile, side-by-side on tablet/desktop)
+#### Scenario: Favicon display in browser tabs
+- **WHEN** a user opens the Chore Aid website in a browser tab
+- **THEN** they see the ChoreAid logo as the favicon in the browser tab
+- **AND** the favicon is clearly visible and recognizable even at small sizes (16x16, 32x32)
+- **AND** the favicon uses the ChoreAid brand colors (blue shield with white elements)
+- **AND** no broken image icon appears in the tab
 
-#### Scenario: Hero section with logo
-- **WHEN** a user visits the landing page
-- **THEN** they see the ChoreAid logo prominently displayed in the hero section
-- **AND** the logo appears alongside or above the "Chore Aid" text title
-- **AND** the logo is properly sized and positioned
-- **AND** the logo has appropriate alt text for screen readers ("ChoreAid logo")
+#### Scenario: Favicon in bookmarks and browser history
+- **WHEN** a user bookmarks the Chore Aid website
+- **THEN** the bookmark displays the ChoreAid logo as its icon
+- **AND** the logo appears in browser history listings
+- **AND** the icon helps users quickly identify the site among other bookmarks
 
-#### Scenario: Hero section display
-- **WHEN** a user visits the landing page
-- **THEN** they see a prominent hero section with the ChoreAid brand identity (logo + title)
-- **AND** a clear description of the service (connecting students with people needing help with chores)
-- **AND** a call-to-action element (visual emphasis, no functional requirement yet)
+#### Scenario: Mobile Add to Home Screen
+- **WHEN** a mobile user adds the site to their home screen (iOS Safari or Android Chrome)
+- **THEN** the home screen icon displays a high-resolution ChoreAid logo (180x180 or higher)
+- **AND** the icon has appropriate padding and clear visual design
+- **AND** the icon background color matches the ChoreAid primary brand color (#2563eb)
+- **AND** iOS users see the logo without any default Safari UI elements overlaid
 
-#### Scenario: Features section
-- **WHEN** a user scrolls down the landing page
-- **THEN** they see a section explaining how the service works or its benefits
-- **AND** the content is organized in a clear, readable format
-- **AND** the section uses modern visual design (cards, icons, or similar)
+#### Scenario: Multiple favicon format support
+- **WHEN** any browser requests the favicon
+- **THEN** the HTML provides multiple format options (SVG, PNG, ICO)
+- **AND** modern browsers prefer the SVG format for crisp scaling
+- **AND** older browsers fall back to ICO or PNG formats
+- **AND** all formats use the same ChoreAid logo design for consistency
 
-#### Scenario: Footer section
-- **WHEN** a user reaches the bottom of the landing page
-- **THEN** they see a footer with basic information
-- **AND** the footer includes appropriate content (copyright, links, or contact info placeholder)
-- **AND** the copyright text displays the application version number from package.json in the format "© {year} Chore Aid v{version}. Kaikki oikeudet pidätetään."
-- **AND** the footer contains working navigation links to category pages and other sections
+#### Scenario: Web App Manifest for PWA readiness
+- **WHEN** a browser checks for PWA capabilities
+- **THEN** a valid manifest.json file exists at the root
+- **AND** the manifest includes icon definitions (192x192, 512x512)
+- **AND** the manifest specifies theme_color matching ChoreAid primary blue (#2563eb)
+- **AND** the manifest includes a descriptive app name and short_name
+
+#### Scenario: Browser theme color on mobile
+- **WHEN** a user visits the site on a mobile browser
+- **THEN** the browser's address bar/toolbar adopts the ChoreAid theme color (#2563eb)
+- **AND** the color creates a cohesive branded experience
+- **AND** the theme color is specified via meta tag in index.html
 
 ### Requirement: Responsive Design
 The landing page SHALL be fully responsive and usable on mobile, tablet, and desktop devices.
@@ -100,4 +104,20 @@ Visual assets (logo and images) SHALL be organized in a structured directory wit
 - **THEN** they are optimized for web usage (reasonable file sizes)
 - **AND** they use appropriate formats (PNG/JPEG for photos, SVG for logos when available)
 - **AND** they implement lazy loading where appropriate to improve performance
+
+### Requirement: Favicon Asset Management
+Favicon files SHALL be organized in the public directory and served at the root path.
+
+#### Scenario: Favicon file organization
+- **WHEN** developers need to locate favicon assets
+- **THEN** all favicon files (SVG, PNG, ICO) are in the `public/` directory
+- **AND** files follow standard naming conventions (favicon.svg, favicon-32x32.png, favicon.ico, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png)
+- **AND** the manifest.json file is also in `public/`
+- **AND** Vite's build process automatically copies these files to the dist/ root
+
+#### Scenario: Favicon optimization
+- **WHEN** favicon files are added to the project
+- **THEN** PNG and ICO files are optimized for minimal file size (< 10KB each, except 512x512)
+- **AND** SVG favicon uses the same choreaid-logo.svg source as the hero logo
+- **AND** all favicon variants maintain visual consistency with the main logo
 
